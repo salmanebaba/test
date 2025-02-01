@@ -86,6 +86,17 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.rightpane a{
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 17px;
+  padding: 12px 15px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 8px;
+}
+
 
 .rightpane p {
   text-align: justify;
