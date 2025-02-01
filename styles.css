@@ -1,0 +1,157 @@
+/* Define color variables for consistency */
+:root {
+  --primary-color: #353a52;
+  --secondary-color: #0488C1;
+  --background-color: #f4f4f9;
+  --text-color: #333;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--primary-color);
+  padding: 1em;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Container Layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+/* Left Pane Styles */
+.leftpane {
+  flex: 1;
+  min-width: 250px;
+  background-color: white;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.leftpane h2 {
+  color: var(--primary-color);
+}
+
+.circular {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.leftpane hr {
+  border: 0;
+  height: 1px;
+  background: var(--secondary-color);
+  margin: 20px 0;
+}
+
+.leftpane address {
+  font-style: normal;
+  line-height: 1.6;
+}
+
+/* Right Pane Styles */
+.rightpane {
+  flex: 2;
+  min-width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rightpane p {
+  text-align: justify;
+}
+.leftpane2 {
+  width: 45%;
+  height: 52%;
+	flex: 30%;
+  float: left;
+	text-align: justify;
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  padding-left:8px;
+  background-color: #f1f1f1;
+	margin-bottom: 0.5cm;	
+}.rightpane2 {
+  width: 45%;
+  height: 52%;
+  flex: 30%;
+  float: right;
+  text-align : justify;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  padding-left:8px;
+  background-color: #f1f1f1;
+  margin-bottom: 0.5cm;
+}.leftpane3 {
+  width: 45%;
+  height: 32%;
+	flex: 30%;
+  float: left;
+	text-align: justify;
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  padding-left:8px;
+  background-color: #f1f1f1;
+	margin-bottom: 0.5cm;	
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.navbar a[href*="linkedin"],
+        footer a[href*="linkedin"] {
+            color: white;
+        }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .leftpane, .rightpane {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  footer {
+      position: static;
+  }
+}
