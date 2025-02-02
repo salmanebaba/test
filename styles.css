@@ -65,6 +65,7 @@ body {
   margin: 20px 0;
 }
 
+
 .leftpane hr {
   border: 0;
   height: 1px;
@@ -125,8 +126,8 @@ footer {
   bottom: 0;
 }
 
-.navbar a[href*="linkedin"],
-        footer a[href*="linkedin"] {
+.navbar a[href*="github"],
+        footer a[href*="github"] {
             color: white;
         }
 
